@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const app = express();
 
 app.use(cors({
-  origin: "http://www.binodlab.tech",
+  origin: "http://binodlab.tech",
   methods: ["GET", "POST"],
 }));
 
@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://www.binodlab.tech",
+    origin: "https://binodlab.tech",
     methods: ["GET", "POST"],
   },
 });
